@@ -9,10 +9,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Misson4Application {
+public class Application {
 
 	public static void main(String[] args) {
-//		SpringApplication.run(Misson4Application.class, args);
+		SpringApplication.run(Application.class, args);
 		try{
 			Connection connection=Jsoup.connect("https://finance.yahoo.com/quote/COKE/history?period1=1616198400&period2=1647734400&interval=1mo&filter=history&frequency=1mo&includeAdjustedClose=true");
 			Document document = connection.get();
